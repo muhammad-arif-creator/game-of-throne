@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const List = () => {
   const [users, setUser] = useState([]);
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState([]);
 
   useEffect(() => {
     fetch("https://thronesapi.com/api/v2/Characters").then((response) => {
